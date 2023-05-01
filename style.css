@@ -1,0 +1,319 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+    /* mobile version */
+
+body {
+    background-color: #C5E4E7;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+    margin-bottom: 41px;
+}
+
+.main_container {
+    background-color: #ffffff;
+    box-shadow: 0px 32px 43px 0px #4FA6AF33;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 32px;
+    border-radius: 25px 25px 0px 0px;
+    width: 100%;
+    height: 789px;
+}
+
+.bill_para,
+.select_para,
+.pple_para {
+    color: #5E7A7D;
+    text-align: left;
+    font-family: "Space Mono";
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.error1,
+.error2 {
+    display: none;
+    color: #E17457;
+    text-align: right;
+    font-family: "Space Mono";
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    font-style: normal;
+    margin-top: -25px;
+    margin-right: 0;
+}
+
+.bill_input,
+.pple_input {
+    background-image: url(./images/icon-dollar.svg);
+    background-repeat: no-repeat;
+    background-position-x: 20px;
+    background-position-y: center;
+    background-color: #F3F9FA;
+    color: #00474B;
+    text-align: right;
+    border: 0px solid;
+    font-family: "Space Mono";
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 700;
+    font-style: normal;
+    cursor: pointer;
+    padding-right: 19px;
+    margin-top: 16px;
+    margin-bottom: 32px;
+    width: 311px;
+    height: 48px;
+}
+
+.percent_div {
+    width: 327px;
+}
+
+.percents {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 16px;
+    margin-bottom: 32px;    
+}
+
+.percent {
+    background-color: #00474B;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Space Mono";
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 700;
+    font-style: normal;
+    border-radius: 5px;
+    border: 0 solid;
+    cursor: pointer;
+    width: 146px;
+    height: 48px;
+}
+
+.custom_input {
+    background-color: #F3F9FA;
+    color: #00474B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: "Space Mono";
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 700;
+    font-style: normal;
+    border-radius: 5px;
+    border: none;
+    width: 146px;
+    height: 48px;
+}
+
+.pple_input {
+    background-image: url(./images/icon-person.svg);
+}
+
+.last_section {
+    background: #00474B;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    overflow-y: hidden;
+    padding: 39px 22px 24px 24px;
+    width: 327px;
+    height: 257px;
+}
+
+.amount_div,
+.total_div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 281px;
+    height: 48px;
+}
+
+.total_div {
+    margin-top: 25px;
+}
+
+.amount_h1,
+.total_h1 {
+    color: #ffffff;
+    font-family: "Space Mono";
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 700;
+    font-style: normal;
+    width: 110px;
+}
+
+.amount_para,
+.total_para {
+    color: #7F9D9F;
+    font-family: "Space Mono";
+    font-size: 13px;
+    line-height: 19px;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.amount_dollar,
+.total_dollar {
+    color: #26C2AE;
+    font-family: "Space Mono";
+    font-size: 32px;
+    line-height: 48px;
+    font-weight: 700;
+    font-style: normal;
+    letter-spacing: -0.67px;
+}
+
+.reset_div {
+    background-color: #0D686D;
+    color: #00474B;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 5px;
+    font-family: "Space Mono";
+    font-size: 20px;
+    line-height: 30px;
+    font-weight: 700;
+    font-style: normal;
+    cursor: pointer;
+    border: 0px solid;
+    margin-top: 35px;
+    width: 281px;
+    height: 48px;
+}
+
+input:focus {
+    border-color: #26C2AE;
+}
+
+*:focus {
+    outline: none;
+}
+
+.bill_input:hover {
+    border: 2px solid #26C2AE;
+    border-style: solid;
+}
+
+.pple_input:hover {
+    border: 2px solid #26C2AE;
+    border-style: solid;
+}
+
+.custom_input:hover {
+    border: 2px solid #26C2AE;
+    border-style: solid;
+}
+
+.percent:hover {
+    background-color: #26C2AE  !important;
+    opacity: 1;
+    color: #00474B;
+}
+
+.reset_div:hover {
+    background: #9FE8DF;
+}
+
+
+
+    /* desktop version */
+
+@media screen and (min-width: 1440px){
+
+    .first_section {
+        margin-right: 48px;
+    }
+
+    .logo {
+        margin-top: 120px;
+        margin-bottom: 87px;
+    }
+    
+    .main_container {
+        flex-direction: row;
+        border-radius: 25px;
+        margin-bottom: 239px;
+        width: 920px;
+        height: 481px;
+    }
+
+    .bill_para,
+    .pple_para {
+        margin-top: 45px;
+    }
+
+    .error1,
+    .error2 {
+        margin-right: 65px;
+    }
+
+    .bill_input,
+    .pple_input {
+        margin-top: 6px;
+        margin-bottom: 44px;
+        width: 379px;
+    }
+
+    .percent_div {
+        width: 379px;
+        height: 112px;
+    }
+
+
+    .percent,
+    .custom_input {
+        width: 117px;
+    }
+
+    .last_section {
+        padding: 56px 40px 40px 40px;
+        width: 413px;
+        height: 417px;
+        overflow-y: hidden;
+    }
+
+    .amount_div,
+    .total_div {
+        width: 333px;
+        height: 71px;
+    }
+
+    .reset_div {
+        margin-top: 110px;
+        width: 333px;
+    }
+    
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="style.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="./reset.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+  <title>Tip calculator app</title>
+</head>
+
+<body>
+  <div class="logo">
+    <img src="./images/logo.svg" alt="logo" />
+  </div>
+  <div class="main_container">
+    <div class="first_section">
+      <p class="bill_para">Bill</p>
+      <div class="error1">Can't be zero</div>
+      <input class="bill_input" id="bill_id" type="number" name="nmb" placeholder="0" required>
+      <div class="percent_div">
+        <p class="select_para">Select Tip %</p>
+        <div class="percents" id="percents_id">
+          <div class="percent" onclick="changeColor(this)">5%</div>
+          <div class="percent" onclick="changeColor(this)">10%</div>
+          <div class="percent" onclick="changeColor(this)">15%</div>
+          <div class="percent" id="id25" onclick="changeColor(this)">25%</div>
+          <div class="percent" onclick="changeColor(this)">50%</div>
+          <div class="custom tip_porcentage" id="custom_id">
+            <input id="custom-id" class="custom_input" type="number" name="custom" placeholder="Custom" required="">
+          </div>
+        </div>
+      </div>
+      <div class="pple_div">
+        <p class="pple_para">Number of People</p>
+        <div class="error2">Can't be zero</div>
+        <input id="pple_id" class="pple_input" type="number" name="nmb" placeholder="0" required>
+      </div>
+    </div>
+    <div class="last_section">
+      <div class="amount_div">
+        <div>
+          <h1 class="amount_h1">Tip Amount</h1>
+          <p class="amount_para">/ person</p>
+        </div>
+        <div id="amount_dollar" class="amount_dollar">$0.00</div>
+      </div>
+      <div class="total_div">
+        <div>
+          <h1 class="total_h1">Total</h1>
+          <p class="total_para">/ person</p>
+        </div>
+        <div id="total_dollar" class="total_dollar">$0.00</div>
+      </div>
+      <div class="reset_div" onclick="myReset()" id="reset_id">Reset</div>
+    </div>
+  </div>
+
+  <script src="./index.js"></script>
+
+</body>
+
+</html>
